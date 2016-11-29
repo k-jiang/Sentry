@@ -1,8 +1,8 @@
 # Sentry
 Citizens2 Town Sentry Character, origional by jrbudda and mcmonkey4eva
 
-v1.9.1-dev  
-It is only a simple hotfix to support Bukkit 1.10.2-R0.1 and Citizens 2.0.19.  
+v1.9.2-dev  
+It is only a simple hotfix to support Bukkit 1.11-R0.1 and Citizens 2.0.21.  
 !!USE IT AT YOUR OWN RISK!!
 
 If you wish to use it anyway, try clone the repo with git and build it with mvn:  

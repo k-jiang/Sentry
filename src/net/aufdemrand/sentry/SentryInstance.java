@@ -10,14 +10,14 @@ import net.citizensnpcs.api.trait.trait.MobType;
 import net.citizensnpcs.api.trait.trait.Owner;
 
 //Version Specifics
-import net.minecraft.server.v1_10_R1.EntityHuman;
-import net.minecraft.server.v1_10_R1.EntityPotion;
-import net.minecraft.server.v1_10_R1.Packet;
-import net.minecraft.server.v1_10_R1.PacketPlayOutAnimation;
-import org.bukkit.craftbukkit.v1_10_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_10_R1.entity.CraftEntity;
-import org.bukkit.craftbukkit.v1_10_R1.entity.CraftLivingEntity;
-import org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack;
+import net.minecraft.server.v1_11_R1.EntityHuman;
+import net.minecraft.server.v1_11_R1.EntityPotion;
+import net.minecraft.server.v1_11_R1.Packet;
+import net.minecraft.server.v1_11_R1.PacketPlayOutAnimation;
+import org.bukkit.craftbukkit.v1_11_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_11_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_11_R1.entity.CraftLivingEntity;
+import org.bukkit.craftbukkit.v1_11_R1.inventory.CraftItemStack;
 /////////////////////////
 
 import org.bukkit.ChatColor;
@@ -850,7 +850,7 @@ public class SentryInstance {
 
 
 			if(myProjectile == org.bukkit.entity.ThrownPotion.class){
-				net.minecraft.server.v1_10_R1.World nmsWorld = ((CraftWorld)getMyEntity().getWorld()).getHandle();
+				net.minecraft.server.v1_11_R1.World nmsWorld = ((CraftWorld)getMyEntity().getWorld()).getHandle();
 				EntityPotion ent = new EntityPotion(nmsWorld, loc.getX(), loc.getY(), loc.getZ(), CraftItemStack.asNMSCopy(potiontype));
 				nmsWorld.addEntity(ent);
 				theArrow = (Projectile) ent.getBukkitEntity();
